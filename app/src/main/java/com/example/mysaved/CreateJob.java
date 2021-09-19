@@ -96,7 +96,7 @@ public class CreateJob extends AppCompatActivity {
             }
         });
 
-        //Get previous job count from database
+        //Get previous job count from database access
         DatabaseReference rr = FirebaseDatabase.getInstance().getReference().child("user").child(userID);
         rr.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
